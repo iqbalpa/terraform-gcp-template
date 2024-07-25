@@ -1,0 +1,5 @@
+project_id   = "<your_project_id>"
+vpc_network  = "<desired_network_name>"
+vm_instance  = "<desired_vm_name>"
+ssh_username = "<username>"
+ssh_pub_key  = "<ssh_public_key>"
