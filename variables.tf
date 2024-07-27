@@ -14,12 +14,12 @@ variable "zone" {
 
 variable "vpc_network" {
   type    = string
-  default = "terraform-network"
+  default = "terraform-network-template"
 }
 
 variable "vm_instance" {
   type    = string
-  default = "terraform-instance"
+  default = "terraform-instance-template"
 }
 
 variable "machine_type" {
