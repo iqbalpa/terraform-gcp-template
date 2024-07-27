@@ -6,6 +6,7 @@ This is a simple project of GCP Configuration. Including the creation of several
 2. VM Instance
 3. Reserve Static External VM IP
 4. Firewall Rules
+5. DNS Record
 
 ## Getting Started
 
