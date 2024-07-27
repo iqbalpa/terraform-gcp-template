@@ -37,5 +37,17 @@ variable "ssh_pub_key" {
 
 variable "boot_disk" {
   type    = string
-  default = "ubuntu-os-cloud/ubuntu-2204-lts"
+  default = "cos-cloud/cos-113-lts"
+}
+
+variable "domain_name" {
+  type = string
+}
+
+variable "dns_record_name" {
+  type = string
+}
+
+variable "managed_zone_name" {
+  type = string
 }

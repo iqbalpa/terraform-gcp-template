@@ -92,8 +92,18 @@ resource "google_compute_firewall" "port-3000-rule" {
   source_ranges = ["0.0.0.0/0"]
 }
 
-
 # Reserve Static IP Address
 resource "google_compute_address" "static" {
   name = "ipv4-address"
+}
+
+# Create DNS Record
+resource "google_dns_record_set" "terraform-learn" {
+  name = "${var.dns_record_name}.${var.domain_name}"
+  type = "A"
+  ttl  = 300
+
+  managed_zone = var.managed_zone_name
+
+  rrdatas = [google_compute_instance.vm_instance.network_interface[0].access_config[0].nat_ip]
 }
