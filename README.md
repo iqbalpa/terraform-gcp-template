@@ -1,5 +1,7 @@
 # GCP Infrastructure Template with Terraform
 
+[![GCP Infrastructure with Terraform Provisioning](https://github.com/iqbalpa/terraform-gcp-template/actions/workflows/deploy.yml/badge.svg)](https://github.com/iqbalpa/terraform-gcp-template/actions/workflows/deploy.yml)
+
 This is a simple project of GCP Configuration. Including the creation of several parts.
 
 1. VPC Network
