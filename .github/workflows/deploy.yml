@@ -3,7 +3,9 @@ name: 'GCP Infrastructure with Terraform Provisioning'
 on:
   push:
     branches: [ "master" ]
-  pull_request:
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.example'
 
 permissions:
   contents: read
