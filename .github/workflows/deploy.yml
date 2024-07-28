@@ -82,4 +82,5 @@ jobs:
       run: terraform show
 
     - name: Terraform Destroy
+      if: ${{ always() }}
       run: terraform destroy -auto-approve
